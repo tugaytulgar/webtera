@@ -5,7 +5,7 @@ import { MessageCircle, X } from "lucide-react";
 import { useState } from "react";
 
 // Formspree endpoint - formspree.io'dan form oluşturup buraya ID'nizi yapıştırın
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/meelzldj";
 
 export default function ContactFormButton() {
   const [isOpen, setIsOpen] = useState(false);
