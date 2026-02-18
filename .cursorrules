@@ -1,0 +1,10 @@
+# Teknoloji Portfolyosu Proje Kuralları
+# .cursor/rules/tugay.mdc ile uyumlu
+
+- Dark Mode (#0a0a0a), Electric Blue (#3b82f6), Emerald Green (#10b981)
+- Glassmorphism: kartlar ve navigasyon
+- Geist / Inter (sans), JetBrains Mono / Fira Code (mono)
+- Framer Motion: hafif animasyonlar
+- Next.js App Router, TypeScript, Tailwind, Lucide React
+- GitHub Pages: output: 'export'
+- Mobil öncelikli, modüler bileşenler (@/components)
