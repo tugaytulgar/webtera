@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ContactFormButton from "@/components/ContactFormButton";
+import { ContactFormProvider } from "@/contexts/ContactFormContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +23,7 @@ export const viewport = {
 
 export const metadata: Metadata = {
   title: "Webtera",
+  icons: { icon: "/icon.svg" },
   description:
     "On yılı aşkın altyapı tecrübesiyle estetik web tasarımını birleştiren, uçtan uca dijital süreç yönetimi sunan Webtera teknoloji ofisi. IT altyapısı, AI otomasyon, web tasarım ve SEO.",
   keywords: [
@@ -49,11 +51,16 @@ export default function RootLayout({
   return (
     <html lang="tr" className="scroll-smooth overflow-x-hidden">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-w-0 font-sans antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen min-w-0 bg-[#0a0a0a] font-sans text-zinc-50 antialiased`}
+        style={{ backgroundColor: "#0a0a0a" }}
       >
-        <Navbar />
-        {children}
-        <ContactFormButton />
+        <ContactFormProvider>
+          <div className="min-h-screen">
+            <Navbar />
+            {children}
+            <ContactFormButton />
+          </div>
+        </ContactFormProvider>
       </body>
     </html>
   );

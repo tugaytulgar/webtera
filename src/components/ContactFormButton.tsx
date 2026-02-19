@@ -3,12 +3,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X } from "lucide-react";
 import { useState } from "react";
+import { useContactForm } from "@/contexts/ContactFormContext";
 
 // Formspree endpoint - formspree.io'dan form oluşturup buraya ID'nizi yapıştırın
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/meelzldj";
 
 export default function ContactFormButton() {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, openContact, closeContact } = useContactForm();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">(
     "idle"
   );
@@ -46,7 +47,7 @@ export default function ContactFormButton() {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
-            onClick={() => setIsOpen(true)}
+            onClick={openContact}
             className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-brand-electric-blue/50 bg-brand-background/90 shadow-lg shadow-brand-electric-blue/20 backdrop-blur-xl transition-colors hover:border-brand-electric-blue hover:bg-brand-electric-blue/10 sm:bottom-8 sm:right-8 sm:h-16 sm:w-16"
             aria-label="Mesaj gönder"
             whileHover={{ scale: 1.05 }}
@@ -69,7 +70,7 @@ export default function ContactFormButton() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={() => setIsOpen(false)}
+              onClick={closeContact}
               className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm"
               aria-hidden
             />
@@ -85,10 +86,10 @@ export default function ContactFormButton() {
               {/* Header */}
               <div className="sticky top-0 z-10 flex items-center justify-between border-b border-brand-border bg-brand-background/95 px-4 py-3 backdrop-blur-sm sm:px-6 sm:py-4">
                 <h3 className="text-lg font-semibold text-white sm:text-xl">
-                  Mesaj Gönderin
+                  Bize Ulaşın
                 </h3>
                 <button
-                  onClick={() => setIsOpen(false)}
+                  onClick={closeContact}
                   className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg text-zinc-400 transition-colors hover:bg-white/5 hover:text-white"
                   aria-label="Kapat"
                 >
