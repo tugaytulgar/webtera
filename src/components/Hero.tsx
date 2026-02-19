@@ -33,13 +33,13 @@ export default function Hero() {
           NEXT GENERATION WEB EXPERIENCES
         </p>
 
-        <h1 className="mb-5 text-3xl font-bold leading-tight tracking-tight text-white sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+        <h1 className="mb-5 text-5xl font-bold leading-tight tracking-tight text-white sm:mb-6 sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
           <span
             className="bg-clip-text text-transparent"
             style={{
-              backgroundImage: "linear-gradient(90deg, #3b82f6, #10b981, #3b82f6)",
-              backgroundSize: "200% 100%",
-              animation: "gradient-breath 4s ease-in-out infinite",
+              backgroundImage: "linear-gradient(90deg, #3b82f6, #38bdf8, #10b981, #34d399, #3b82f6)",
+              backgroundSize: "300% 100%",
+              animation: "gradient-breath 5s ease-in-out infinite",
             }}
           >
             Webtera
