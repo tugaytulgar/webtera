@@ -23,6 +23,10 @@ export const viewport = {
 
 export const metadata: Metadata = {
   title: "Webtera",
+  metadataBase: new URL("https://webtera.tr"),
+  alternates: {
+    canonical: "/",
+  },
   icons: { icon: "/icon.svg" },
   description:
     "On yılı aşkın altyapı tecrübesiyle estetik web tasarımını birleştiren, uçtan uca dijital süreç yönetimi sunan Webtera teknoloji ofisi. IT altyapısı, AI otomasyon, web tasarım ve SEO.",
