@@ -9,6 +9,67 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 const GA_MEASUREMENT_ID = "G-YK3PHEPTQV";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webtera.tr/#organization",
+      name: "Webtera",
+      url: "https://webtera.tr/",
+      logo: "https://webtera.tr/icon.svg",
+      email: "tulgartugay@gmail.com",
+      sameAs: [
+        "https://www.linkedin.com/in/tugay-tulgar-981ab6141/",
+        "https://github.com/tugaytulgar/",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://webtera.tr/#website",
+      url: "https://webtera.tr/",
+      name: "Webtera",
+      publisher: { "@id": "https://webtera.tr/#organization" },
+    },
+    {
+      "@type": ["ProfessionalService", "LocalBusiness"],
+      "@id": "https://webtera.tr/#localbusiness",
+      name: "Webtera",
+      url: "https://webtera.tr/",
+      logo: "https://webtera.tr/icon.svg",
+      email: "tulgartugay@gmail.com",
+      sameAs: [
+        "https://www.linkedin.com/in/tugay-tulgar-981ab6141/",
+        "https://github.com/tugaytulgar/",
+      ],
+      areaServed: [
+        { "@type": "Country", name: "TR" },
+        { "@type": "City", name: "Tekirdağ" },
+        { "@type": "City", name: "Çerkezköy" },
+        { "@type": "City", name: "İstanbul" },
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Hizmetler",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Web tasarım" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Web sitesi" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "SEO" },
+          },
+        ],
+      },
+    },
+  ],
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -58,6 +119,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="scroll-smooth overflow-x-hidden">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       {process.env.NODE_ENV === "production" && (
         <>
           <Script
