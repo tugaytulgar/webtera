@@ -42,7 +42,7 @@ export default function Hero() {
               animation: "gradient-breath 5s ease-in-out infinite",
             }}
           >
-            Webtera
+            webtera
           </span>
         </h1>
 
