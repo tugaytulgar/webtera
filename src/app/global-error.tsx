@@ -15,7 +15,7 @@ export default function GlobalError({
 
   return (
     <html lang="tr">
-      <body style={{ background: "#0a0a0a", color: "#fafafa", margin: 0 }}>
+      <body style={{ background: "#1a1a1e", color: "#fafafa", margin: 0 }}>
         <div
           style={{
             display: "flex",

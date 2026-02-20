@@ -21,7 +21,7 @@ export default function Error({
         alignItems: "center",
         justifyContent: "center",
         minHeight: "100vh",
-        background: "#0a0a0a",
+        background: "#1a1a1e",
         color: "#fafafa",
         padding: 16,
         textAlign: "center",

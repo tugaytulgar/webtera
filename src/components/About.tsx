@@ -29,7 +29,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="mb-3 font-mono text-sm uppercase tracking-widest text-sky-300 sm:mb-4 sm:text-base"
+              className="mb-3 font-mono text-sm uppercase tracking-widest text-sky-300 sm:mb-4 sm:text-lg"
             >
               Hakkımızda
             </motion.p>
@@ -38,7 +38,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.15, duration: 0.5 }}
-              className="mb-5 text-2xl font-bold tracking-tight sm:mb-6 sm:text-3xl md:text-4xl"
+              className="mb-5 text-2xl font-bold tracking-tight sm:mb-6 sm:text-4xl md:text-5xl"
             >
               <span
                 className="bg-clip-text text-transparent"
@@ -58,7 +58,7 @@ export default function About() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.25 }}
-              className="mt-4 flex flex-wrap gap-x-4 gap-y-1 border-l-2 border-sky-400/40 pl-4 font-mono text-xs text-sky-300/90 sm:pl-6 md:block md:flex-none md:gap-0 md:border-l-2 md:pl-6"
+              className="mt-4 flex flex-wrap gap-x-4 gap-y-1 border-l-2 border-sky-400/40 pl-4 font-mono text-sm text-sky-300/90 sm:pl-6 md:block md:flex-none md:gap-0 md:border-l-2 md:pl-6"
             >
               {highlights.map((text) => (
                 <div key={text} className="mb-2 last:mb-0 md:mb-2">

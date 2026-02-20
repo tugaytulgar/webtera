@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import ContactFormButton from "@/components/ContactFormButton";
 import { ContactFormProvider } from "@/contexts/ContactFormContext";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import SiteBackgroundDots from "@/components/SiteBackgroundDots";
+import SiteCodeExpressions from "@/components/SiteCodeExpressions";
 
 const GA_MEASUREMENT_ID = "G-YK3PHEPTQV";
 
@@ -147,12 +149,14 @@ export default function RootLayout({
         </>
       )}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen min-w-0 bg-[#0a0a0a] font-sans text-zinc-50 antialiased`}
-        style={{ backgroundColor: "#0a0a0a" }}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen min-w-0 bg-[#1a1a1e] font-sans text-zinc-50 antialiased`}
+        style={{ backgroundColor: "#1a1a1e" }}
       >
         <ContactFormProvider>
           {process.env.NODE_ENV === "production" && <GoogleAnalytics />}
-          <div className="min-h-screen">
+          <SiteBackgroundDots />
+          <SiteCodeExpressions />
+          <div className="relative z-10 min-h-screen">
             <Navbar />
             {children}
             <ContactFormButton />

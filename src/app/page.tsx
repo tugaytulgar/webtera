@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Hero from "@/components/Hero";
+import OrbitalHero from "@/components/OrbitalHero";
+// import Hero from "@/components/Hero"; // alternatif: klasik hero
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <OrbitalHero />
       <About />
       <Services />
       <Contact />

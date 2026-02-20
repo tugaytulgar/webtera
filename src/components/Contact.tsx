@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, Linkedin, Github } from "lucide-react";
 
 const contact = {
-  email: "tulgartugay@gmail.com",
+  email: "info@webtera.tr",
   linkedin: "https://www.linkedin.com/in/tugay-tulgar-981ab6141/",
   github: "https://github.com/tugaytulgar/",
 };
@@ -59,7 +59,7 @@ export default function Contact() {
             </div>
             <div className="min-w-0 flex-1">
               <p className="font-mono text-xs text-zinc-500">E-posta</p>
-              <p className="break-all text-sm text-white transition-colors group-hover:text-brand-electric-blue sm:text-base">
+              <p className="break-all text-sm text-white transition-colors group-hover:text-brand-electric-blue sm:text-lg">
                 {contact.email}
               </p>
             </div>

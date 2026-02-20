@@ -44,7 +44,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="mb-10 sm:mb-12 md:mb-16"
         >
-          <p className="mb-3 font-mono text-sm uppercase tracking-widest text-sky-300 sm:mb-4 sm:text-base">
+          <p className="mb-3 font-mono text-sm uppercase tracking-widest text-sky-300 sm:mb-4 sm:text-lg">
             Hizmetler
           </p>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
@@ -56,7 +56,7 @@ export default function Services() {
                 animation: "gradient-breath 4s ease-in-out infinite",
               }}
             >
-              Ne Yapıyoruz
+              Ne Yapıyoruz ?
             </span>
           </h2>
         </motion.div>

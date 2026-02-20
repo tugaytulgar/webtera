@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          background: "#0a0a0a",
+          background: "#1a1a1e",
           "electric-blue": "#3b82f6",
           "emerald-green": "#10b981",
           muted: "#71717a",
