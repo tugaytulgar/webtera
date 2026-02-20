@@ -236,7 +236,7 @@ export default function OrbitalHero() {
       {/* Ortalanmış hero bloğu: max-width + mx-auto */}
       <div className="relative z-10 flex w-full max-w-6xl flex-1 flex-col lg:mx-auto lg:flex-row lg:items-center lg:px-6 xl:max-w-7xl xl:px-8">
       {/* —— LEFT: Copy + CTAs + Stats —— */}
-      <div className="relative flex flex-1 flex-col justify-center px-6 py-16 sm:px-8 md:px-10 lg:max-w-[52%] lg:py-24 lg:pr-10">
+      <div className="relative flex flex-1 flex-col justify-center px-6 pt-28 pb-16 sm:px-8 sm:pt-24 sm:pb-20 md:px-10 md:py-24 lg:max-w-[52%] lg:py-24 lg:pr-10">
         <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-brand-electric-blue sm:text-sm">
           NEXT GENERATION WEB EXPERIENCES
         </p>
