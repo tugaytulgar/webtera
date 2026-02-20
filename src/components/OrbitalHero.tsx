@@ -120,6 +120,41 @@ export default function OrbitalHero() {
     setActiveRegion(null);
   }, []);
 
+  const getRegionFromClientCoords = useCallback((clientX: number, clientY: number) => {
+    const el = zoneRef.current;
+    if (!el) return 0;
+    const rect = el.getBoundingClientRect();
+    const x = (clientX - rect.left) / rect.width;
+    const y = (clientY - rect.top) / rect.height;
+    return x < 0.5 ? (y < 0.5 ? 0 : 2) : (y < 0.5 ? 1 : 3);
+  }, []);
+
+  const handleZoneTouchStart = useCallback(
+    (e: React.TouchEvent<HTMLDivElement>) => {
+      if (!e.touches.length) return;
+      mouseInZoneRef.current = true;
+      setZoneHover(true);
+      const region = getRegionFromClientCoords(e.touches[0].clientX, e.touches[0].clientY);
+      setActiveRegion(region);
+    },
+    [getRegionFromClientCoords]
+  );
+
+  const handleZoneTouchMove = useCallback(
+    (e: React.TouchEvent<HTMLDivElement>) => {
+      if (!e.touches.length) return;
+      const region = getRegionFromClientCoords(e.touches[0].clientX, e.touches[0].clientY);
+      setActiveRegion(region);
+    },
+    [getRegionFromClientCoords]
+  );
+
+  const handleZoneTouchEnd = useCallback(() => {
+    mouseInZoneRef.current = false;
+    setZoneHover(false);
+    setActiveRegion(null);
+  }, []);
+
   useEffect(() => {
     if (activeRegion === null) return;
     setShowingLabelId(activeRegion);
@@ -259,7 +294,11 @@ export default function OrbitalHero() {
           onMouseEnter={handleZoneEnter}
           onMouseLeave={handleZoneLeave}
           onMouseMove={handleZoneMove}
-          aria-label="Hizmetler bölgesi — mouse ile etiketleri gösterir"
+          onTouchStart={handleZoneTouchStart}
+          onTouchMove={handleZoneTouchMove}
+          onTouchEnd={handleZoneTouchEnd}
+          onTouchCancel={handleZoneTouchEnd}
+          aria-label="Hizmetler bölgesi — mouse veya dokunma ile etiketleri gösterir"
         >
           {/* Ortada icon: transparan, hover ile parlar */}
           <div
