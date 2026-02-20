@@ -101,13 +101,18 @@ export const metadata: Metadata = {
     "AI Automation",
     "Digital Transformation",
     "Web Tasarım",
+    "İnternet Sitesi",
+    "Tasarım",
     "SEO",
     "Teknoloji Ofisi",
+    "Çerkezköy",
+    "Tekirdağ",
+    "İstanbul",
   ],
   openGraph: {
     title: "Webtera",
     description:
-      "On yılı aşkın altyapı tecrübesiyle estetik web tasarımını birleştiren, uçtan uca dijital süreç yönetimi sunan teknoloji ofisi.",
+      "Webtera ile modern web sitesi tasarım ve kurumsal web sitesi çözümleri. Mobil uyumlu, hızlı, SEO altyapılı ve dönüşüm odaklı tasarım. Teklif alın, hızlı başlayın.",
     type: "website",
   },
 };
