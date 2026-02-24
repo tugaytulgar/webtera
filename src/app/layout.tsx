@@ -89,7 +89,7 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Webtera",
+  title: "Web Sitesi Tasarımı | Yayına Alma | Bakım | Çerkezköy Tekirdağ | Webtera",
   metadataBase: new URL("https://www.webtera.tr"),
   alternates: {
     canonical: "/",
