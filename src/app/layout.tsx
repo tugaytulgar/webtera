@@ -90,13 +90,13 @@ export const viewport = {
 
 export const metadata: Metadata = {
   title: "Webtera",
-  metadataBase: new URL("https://webtera.tr"),
+  metadataBase: new URL("https://www.webtera.tr"),
   alternates: {
     canonical: "/",
   },
   icons: { icon: "/icon.svg" },
   description:
-    "On yılı aşkın altyapı tecrübesiyle estetik web tasarımını birleştiren, uçtan uca dijital süreç yönetimi sunan Webtera teknoloji ofisi. IT altyapısı, AI otomasyon, web tasarım ve SEO.",
+    "Çerkezköy ve Tekirdağ’da web sitesi tasarımı, yayına alma ve bakım hizmetleri. Mobil uyumlu, hızlı, SEO altyapılı kurumsal siteler. Hızlı teklif alın.",
   keywords: [
     "Webtera",
     "IT Infrastructure",
