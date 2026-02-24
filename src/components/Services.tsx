@@ -108,6 +108,12 @@ export default function Services() {
                   </span>
                 ))}
               </div>
+              <a
+                href="/web-sitesi-tasarimi"
+                className="mt-4 inline-flex text-sm text-sky-300 hover:text-white"
+              >
+                Detay
+              </a>
             </motion.article>
           ))}
         </div>
