@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://webtera.tr/sitemap.xml
+Sitemap: https://www.webtera.tr/sitemap.xml
