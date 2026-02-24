@@ -1,3 +1,9 @@
+export const metadata = {
+    title: "Çerkezköy Web Sitesi Tasarımı | Tekirdağ | Webtera",
+    description:
+      "Çerkezköy ve Tekirdağ’da kurumsal web sitesi tasarımı. Mobil uyumlu, hızlı, SEO altyapılı modern siteler. Hızlı teklif alın.",
+  };
+
 export default function Page() {
     return (
       <main className="relative z-10 mx-auto max-w-6xl px-6 sm:px-8 md:px-10 pt-28 pb-16">
