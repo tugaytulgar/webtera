@@ -1,12 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Instagram, MapPin } from "lucide-react";
 
 const contact = {
   email: "info@webtera.tr",
   linkedin: "https://www.linkedin.com/in/tugay-tulgar-981ab6141/",
   github: "https://github.com/tugaytulgar/",
+  instagram: "https://www.instagram.com/webtera.tr",
+  googleMaps: "https://maps.app.goo.gl/XUqeekKCjGTVokDk9",
 };
 
 export default function Contact() {
@@ -101,6 +103,46 @@ export default function Contact() {
               <p className="font-mono text-xs text-zinc-500">GitHub</p>
               <p className="text-white transition-colors group-hover:text-brand-emerald-green">
                 Repolar
+              </p>
+            </div>
+          </a>
+
+          <a
+            href={contact.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex min-h-[56px] items-center gap-3 rounded-xl border border-brand-border bg-white/[0.04] px-4 py-3.5 backdrop-blur-sm transition-colors hover:border-pink-400/30 hover:bg-white/[0.07] active:scale-[0.99] sm:gap-4 sm:rounded-2xl sm:px-6 sm:py-4"
+          >
+            <div className="rounded-lg border border-brand-border bg-pink-500/10 p-3">
+              <Instagram
+                className="h-5 w-5 text-pink-400"
+                strokeWidth={1.5}
+              />
+            </div>
+            <div>
+              <p className="font-mono text-xs text-zinc-500">Instagram</p>
+              <p className="text-white transition-colors group-hover:text-pink-400">
+                @webtera.tr
+              </p>
+            </div>
+          </a>
+
+          <a
+            href={contact.googleMaps}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex min-h-[56px] items-center gap-3 rounded-xl border border-brand-border bg-white/[0.04] px-4 py-3.5 backdrop-blur-sm transition-colors hover:border-brand-electric-blue/30 hover:bg-white/[0.07] active:scale-[0.99] sm:gap-4 sm:rounded-2xl sm:px-6 sm:py-4"
+          >
+            <div className="rounded-lg border border-brand-border bg-brand-electric-blue/10 p-3">
+              <MapPin
+                className="h-5 w-5 text-brand-electric-blue"
+                strokeWidth={1.5}
+              />
+            </div>
+            <div>
+              <p className="font-mono text-xs text-zinc-500">Konum</p>
+              <p className="text-white transition-colors group-hover:text-brand-electric-blue">
+                Google Maps&apos;te Görüntüle
               </p>
             </div>
           </a>

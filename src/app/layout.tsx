@@ -24,6 +24,8 @@ const jsonLd = {
       sameAs: [
         "https://www.linkedin.com/in/tugay-tulgar-981ab6141/",
         "https://github.com/tugaytulgar/",
+        "https://www.instagram.com/webtera.tr",
+        "https://maps.app.goo.gl/XUqeekKCjGTVokDk9",
       ],
     },
     {
@@ -43,6 +45,8 @@ const jsonLd = {
       sameAs: [
         "https://www.linkedin.com/in/tugay-tulgar-981ab6141/",
         "https://github.com/tugaytulgar/",
+        "https://www.instagram.com/webtera.tr",
+        "https://maps.app.goo.gl/XUqeekKCjGTVokDk9",
       ],
       areaServed: [
         { "@type": "Country", name: "TR" },
