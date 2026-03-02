@@ -310,7 +310,7 @@ export default function OrbitalHero() {
             aria-hidden
           >
             <img
-              src="/icon.svg"
+              src="/icon.png"
               alt=""
               width={48}
               height={48}

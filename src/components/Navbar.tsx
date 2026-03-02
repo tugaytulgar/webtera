@@ -85,7 +85,7 @@ export default function Navbar() {
           className="flex items-center gap-2.5 transition-opacity hover:opacity-90 sm:gap-3"
         >
           <Image
-            src="/icon.svg"
+            src="/icon.png"
             alt=""
             width={28}
             height={28}

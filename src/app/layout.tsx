@@ -19,7 +19,7 @@ const jsonLd = {
       "@id": "https://webtera.tr/#organization",
       name: "Webtera",
       url: "https://webtera.tr/",
-      logo: "https://webtera.tr/icon.svg",
+      logo: "https://webtera.tr/icon.png",
       email: "tulgartugay@gmail.com",
       sameAs: [
         "https://www.linkedin.com/in/tugay-tulgar-981ab6141/",
@@ -40,7 +40,7 @@ const jsonLd = {
       "@id": "https://webtera.tr/#localbusiness",
       name: "Webtera",
       url: "https://webtera.tr/",
-      logo: "https://webtera.tr/icon.svg",
+      logo: "https://webtera.tr/icon.png",
       email: "tulgartugay@gmail.com",
       sameAs: [
         "https://www.linkedin.com/in/tugay-tulgar-981ab6141/",
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  icons: { icon: "/icon.svg" },
+  icons: { icon: "/icon.png" },
   description:
     "Çerkezköy ve Tekirdağ’da web sitesi tasarımı, yayına alma ve bakım hizmetleri. Mobil uyumlu, hızlı, SEO altyapılı kurumsal siteler. Hızlı teklif alın.",
   keywords: [
